@@ -1,0 +1,61 @@
+2024-02-19 13:03:59,277:ERROR:FileNotFound: File not found.
+2024-02-19 14:19:21,761:ERROR:An unexpected error has occurred. Details: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+2024-02-19 14:20:09,671:ERROR:An unexpected error has occurred. Details: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+2024-02-19 14:23:11,603:ERROR:An unexpected error has occurred. Details: stat: path should be string, bytes, os.PathLike or integer, not StringVar
+2024-02-19 14:38:42,709:ERROR:An unexpected error has occurred. Details: stat: path should be string, bytes, os.PathLike or integer, not StringVar
+2024-02-19 14:39:22,820:ERROR:An unexpected error has occurred. Details: stat: path should be string, bytes, os.PathLike or integer, not StringVar
+2024-02-19 14:44:09,066:ERROR:An unexpected error has occurred. Details: stat: path should be string, bytes, os.PathLike or integer, not StringVar
+2024-02-19 14:52:36,127:ERROR:excelの読み込み中にエラーが発生しました: 'row'
+2024-02-19 14:54:52,916:ERROR:excelの読み込み中にエラーが発生しました: 'row'
+2024-02-19 14:56:37,612:ERROR:excelの読み込み中にエラーが発生しました: 'row'
+2024-02-19 15:06:24,168:ERROR:excelの読み込み中にエラーが発生しました: 'row'
+2024-02-19 15:06:30,485:ERROR:excelの読み込み中にエラーが発生しました: 'row'
+2024-02-19 15:09:36,271:ERROR:excelの読み込み中にエラーが発生しました: 'row'
+2024-02-19 15:09:49,869:ERROR:An unexpected error has occurred. Details: stat: path should be string, bytes, os.PathLike or integer, not StringVar
+2024-02-19 15:10:00,722:ERROR:excelの読み込み中にエラーが発生しました: 'row'
+2024-02-19 15:10:16,483:ERROR:excelの読み込み中にエラーが発生しました: 'row'
+2024-02-19 15:12:20,402:ERROR:An unexpected error has occurred. Details: stat: path should be string, bytes, os.PathLike or integer, not StringVar
+2024-02-19 15:27:11,669:ERROR:An unexpected error has occurred. Details: stat: path should be string, bytes, os.PathLike or integer, not StringVar
+2024-02-19 15:44:38,323:ERROR:FileNotFound: File not found.
+2024-02-19 15:44:46,440:ERROR:FileNotFound: File not found.
+2024-02-19 17:18:55,367:ERROR:FileNotFound: File not found.
+2024-02-19 17:47:50,798:ERROR:FileNotFound: File not found.
+2024-02-19 17:47:55,941:ERROR:FileNotFound: File not found.
+2024-02-19 17:57:50,716:ERROR:Typeerror: The input value must be a non-negative integer: 500
+2024-02-19 17:57:57,976:ERROR:Typeerror: The input value must be a non-negative integer: 600
+2024-02-19 18:04:34,533:ERROR:Typeerror: The input value must be a non-negative integer: 500
+2024-02-19 18:11:15,187:ERROR:FileNotFound: File not found.
+2024-02-19 18:11:30,490:ERROR:FileNotFound: File not found.
+2024-02-19 18:11:35,641:ERROR:FileNotFound: File not found.
+2024-02-19 18:12:02,817:ERROR:Typeerror: The input value must be a non-negative integer: 500
+2024-02-19 18:14:12,263:ERROR:Typeerror: '<' not supported between instances of 'str' and 'int'
+2024-02-19 18:16:14,580:ERROR:valueerror: invalid literal for int() with base 10: 'aaa'
+2024-02-19 18:18:01,091:ERROR:valueerror: The input value must be a non-negative integer: -100
+2024-02-19 18:20:32,524:ERROR:valueerror: invalid literal for int() with base 10: 's'
+2024-02-19 18:22:37,559:ERROR:valueerror: invalid literal for int() with base 10: 's'
+2024-02-19 18:22:54,863:ERROR:FileNotFound: File not found.
+2024-02-19 18:23:05,725:ERROR:FileNotFound: File not found.
+2024-02-19 18:40:46,366:ERROR:valueerror: invalid literal for int() with base 10: 's'
+2024-03-24 23:25:35,293:ERROR:FileNotFound: File not found.
+2024-03-24 23:25:55,001:ERROR:FileNotFound: File not found.
+2024-04-15 16:00:25,728:ERROR:FileNotFound: File not found.
+2024-04-15 16:19:15,167:ERROR:FileNotFound: File not found.
+2024-04-15 16:20:19,656:ERROR:FileNotFound: File not found.
+2024-04-15 18:31:51,968:ERROR:FileNotFound: File not found.
+2024-04-15 18:32:07,426:ERROR:FileNotFound: File not found.
+2024-04-15 19:27:00,629:ERROR:FileNotFound: File not found.
+2024-04-15 19:28:55,239:ERROR:FileNotFound: File not found.
+2024-04-15 19:30:20,549:ERROR:FileNotFound: File not found.
+2024-04-15 19:39:28,514:ERROR:FileNotFound: File not found.
+2024-04-23 16:16:32,712:ERROR:FileNotFound: File not found.
+2024-04-23 16:26:54,556:ERROR:FileNotFound: File not found.
+2024-04-23 16:28:18,866:ERROR:FileNotFound: File not found.
+2024-04-23 16:34:57,705:ERROR:FileNotFound: File not found.
+2024-04-24 16:29:13,702:ERROR:FileNotFound: File not found.
+2024-04-25 20:18:55,459:ERROR:FileNotFound: File not found.
+2024-04-26 10:22:26,475:ERROR:FileNotFound: File not found.
+2024-04-26 19:09:52,043:ERROR:excelの読み込み中にエラーが発生しました: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+2024-04-26 19:18:24,468:ERROR:excelの読み込み中にエラーが発生しました: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+2024-04-26 19:18:27,204:ERROR:FileNotFound: File not found.
+2024-05-10 18:48:37,136:ERROR:excelの読み込み中にエラーが発生しました: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+2024-05-10 18:55:24,989:ERROR:excelの読み込み中にエラーが発生しました: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.

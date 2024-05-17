@@ -1,0 +1,7 @@
+{
+  "excel_path": "../data/excel/URL.xlsx",
+  "movie_directory": "../data/movies",
+  "json_directory": "../data/fieldJSON",
+  "output_directory": "../data/outPuts",
+  "movie_extension": ".mp4"
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<h1 id="ぷよ譜編集ツール">ぷよ譜編集ツール</h1>
+<h4 id="修正">修正</h4>
+<h5 id="section">2024/05/07</h5>
+<ul>
+<li>挿入ボタンに関するバグを修正しました</li>
+<li>手番が進んだプレイヤーの枠線の色を変更するようにしました</li>
+<li>盤番号の表示を変更しました.</li>
+</ul>
+<h2 id="導入部">導入部</h2>
+<p>このツールは, GUIを介してぷよ譜の編集を行うことを目的としています.
+ユーザーはビデオとぷよ譜データの閲覧・編集が可能で,
+具体的にはファイルの読み込みから盤の編集,
+動画のコントロールまで幅広い機能を提供します.</p>
+<h2 id="インストール">インストール</h2>
+<p>ディレクトリをpuyofuEditerに設定後,
+以下のコマンドを実行して必要なライブラリをインストールします：</p>
+<p><code>pip</code> install -r requirements.txt</p>
+<h2 id="起動方法">起動方法</h2>
+<ol type="1">
+<li>コマンドプロンプトやターミナルを開きます</li>
+<li>プロジェクトのsrcディレクトリまで移動します.
+以下のコマンドを実行してください :
+<ul>
+<li><code>cd</code> main.pyが存在するディレクトリパス”</li>
+</ul></li>
+<li>移動先のディレクトリで以下のコマンドを実行してください：
+<ul>
+<li><code>python</code> main.py</li>
+</ul></li>
+</ol>
+<h2 id="機能">機能</h2>
+<p>ユーザーはGUI上からファイルパスや棋譜の編集を行えます。これにより、動画ファイルやぷよ譜データファイルを適切に管理し、必要な作業環境を整えることができます。</p>
+<p>※旧バージョンの画像が表示されています <img
+src="docs/README_images/gui.png" alt="gui_images" /></p>
+<h3 id="excelファイルの設定">1. excelファイルの設定</h3>
+<ul>
+<li>①試合情報が記載された<code>.xlsx</code>ファイルを指定します。このファイルには試合の基本情報が含まれており、GUI上で自動的にデフォルトパスから読み込まれます。</li>
+<li>ファイルの読み込みに成功すると、GUI上に試合番号を選択するための⑤プルダウンメニューが表示されます。試合番号は「S+整数5桁」の形式で表されます。</li>
+</ul>
+<h3 id="動画ファイルが配置されているディレクトリの設定">2.
+動画ファイルが配置されているディレクトリの設定</h3>
+<ul>
+<li>②動画(<code>.mp4</code>,
+<code>.webm</code>など)ファイルが配置されたディレクトリを指定します.</li>
+</ul>
+<h3 id="jsonファイルが配置されているディレクトリの設定">3.
+jsonファイルが配置されているディレクトリの設定</h3>
+<ul>
+<li>③<code>.json</code>ファイルが配置されたディレクトリを指定します</li>
+</ul>
+<h3 id="動画ファイルの設定">4. 動画ファイルの設定</h3>
+<ul>
+<li>④読み込む動画ファイルを設定します.</li>
+</ul>
+<h3 id="動画ファイルの読み込みとコントロール">5.
+動画ファイルの読み込みとコントロール</h3>
+<p>⑥-⑫動画ファイルを読み込み,
+以下のような基本的な操作がGUI上で行えます：</p>
+<ul>
+<li>コマ送りと早送り</li>
+<li>シークバーによる再生位置の変更</li>
+</ul>
+<h3 id="棋譜データの読み込みと編集">6. 棋譜データの読み込みと編集</h3>
+<p>⑬-㉘JSON形式で保存されたぷよ譜データを読み込み、以下の編集が可能です：</p>
+<ul>
+<li>読み込むページを指定</li>
+<li>各手のパラメータの変更</li>
+<li>盤の編集</li>
+<li>ぷよ譜に新しい手を追加または削除</li>
+<li>記録したtick(時間)の変更</li>
+</ul>
+<p>画面右側の詳細な機能説明です. - ⑬
+ぷよ譜に記録された瞬間(tick)の一覧から読みこむデータを選択できます. - ⑭⑮
+「&lt;-」「 -&gt;」 ボタンで次の手に移動できます - ⑯⑰⑱
+現在参照している手の⑰ゲーム番号, ⑩手番号, ⑱時間を表示します. - ⑲
+⑯ゲーム⑰手目の盤を⑱指定したtickに変更します - ⑳
+⑯ゲーム⑰手目の盤の削除が行えます.</p>
+<p>ゲーム0, 盤番号1の場合</p>
+<pre><code>  操作前 [field0, field1, field2,...]
+  操作後 [field0, field2, field3,...]</code></pre>
+<ul>
+<li><p>㉑㉒㉓㉔
+上記と同様にして対応した盤の位置に指定したtickで新たに手を挿入できます.
+挿入される盤は指定位置のものをコピーします.</p>
+<p>ゲーム0, 盤番号1 の場合</p>
+<pre><code>操作前 [field0, field1, field2,...]
+操作後 [field0, new_field, field1, field2,...]</code></pre></li>
+<li><p>㉕ 取得タイミングが連鎖によるものかどうかを設定します.</p></li>
+<li><p>㉖ 現在全消し中かどうか設定します.</p></li>
+<li><p>㉗ 取得した盤を表示します.
+㉘で色を選択しクリックすることで色を変更することができます.</p></li>
+<li><p>㉘ 盤に配置するぷよの色を変更できます.
+一番右は背景に対応しています.</p></li>
+<li><p>㉙ 設定したファイル名でファイルを保存します.
+保存先はデフォルトで<code>puyofuEditer/data/outPuts/</code>
+です</p></li>
+</ul>
+<h3 id="ファイルの保存">7. ファイルの保存</h3>
+<p>㉘㉙<code>.json</code>ファイルを保存します</p>
+<h2 id="操作手順">操作手順</h2>
+<p>編集作業を進める際には以下の手順に従うと良いでしょう.</p>
+<h4 id="各種パスの設定">1. ①-④　各種パスの設定</h4>
+<ul>
+<li>通常はデフォルト設定で問題ありませんが、異なるファイルやディレクトリを使用する場合は、ファイル選択ダイアログを通じて新しいパスを指定できます。</li>
+</ul>
+<h4 id="大会番号の選択">2. ⑤ 大会番号の選択</h4>
+<ul>
+<li>§1の操作が正常に完了すると大会番号の一覧が選択できる⑤コンボボックスが表示されます.
+作業を行う番号を選んでください</li>
+</ul>
+<h4 id="動画の設定">3. ⑥⑦動画の設定</h4>
+<p>§2の後⑥loadをクリックすると動画を読み込みます. ②Movie Directory
+に該当する動画が存在しない場合警告が出るので,
+⑦ダウンロードボタンをクリックして動画をダウンロードして下さい.
+ダウンロードの進捗はターミナル(VSCodeの下部とか)に表示され,
+通常数分以内に終了します.</p>
+<h4 id="ぷよ譜の修正">4. ⑧-㉘ぷよ譜の修正</h4>
+<p>修正作業の準備ができました.
+以下の順番で各盤面を確認し修正を行ってください</p>
+<figure>
+<img src="docs/README_images/error_board2.png" alt="error_board2" />
+<figcaption aria-hidden="true">error_board2</figcaption>
+</figure>
+<ol type="1">
+<li>⑭「&lt;-」⑮「-&gt;」ボタンをクリックして手番を進めます.</li>
+<li>手番が進んだプレイヤーは枠線の色が変わります.
+画面右枠線の色を確認し, グレーになったプレイヤーに注目します</li>
+<li>動画とぷよ譜を照らし合わせ以下の点について確認を行います</li>
+</ol>
+<ul>
+<li><p>取得タイミングがずれていないか</p></li>
+<li><p>余分に手を取得していないか,
+手が飛んでいないか(飛んでいた場合は挿入,
+余分なものは削除して対応します)</p></li>
+<li><p>盤は正しいか</p></li>
+<li><p>取得は連鎖によるものか</p></li>
+<li><p>全消し中か</p>
+<p>※取得タイミングは連鎖が起きずnext(画面中央上部)が動き始めた,
+もしくは連鎖演出が始まった(画面下部スコアの×印が出現)した瞬間です</p></li>
+</ul>
+<figure>
+<img src="docs/README_images/error_board3.png" alt="error_board3" />
+<figcaption aria-hidden="true">error_board3</figcaption>
+</figure>
+<p>今回の場合, -
+取得タイミングは連鎖の演出が始まった瞬間(取得が早すぎた)ので左下の+1,
+-1ボタンで時間を調整し変更ボタンを押す -
+紫と緑の位置がおかしいので適切な位置に修正＆追加 -
+画面下部にバツ印が出ているため状態をrensa -
+盤中央に全消しという文字が出ていないので全消しをfalseに</p>
+<p>これを繰り返すことで正しいぷよ譜を作成していきます.</p>
+<h4 id="ファイルの保存-1">5. ㉙㉚ ファイルの保存</h4>
+<p>修正したファイルは保存ボタンを押さないと保存されません.
+ファイル名を確認したのち保存してください</p>
+<h4 id="保存したぷよ譜の確認">6. 保存したぷよ譜の確認</h4>
+<ol type="1">
+<li>③Json
+Directoryの「select」ボタンを押しディレクトリを<code>../data/outPuts</code>に変更する.</li>
+<li>「reload」ボタンを押しjsonファイルを読み込む</li>
+<li>修正後のぷよ譜を確認しミスがあったら修正します.</li>
+</ol>
+<h2 id="ディレクトリ構造">ディレクトリ構造</h2>
+<pre><code>puyofuEditer/
+├── README.md
+├── docs/
+│   └── README_images/
+├── src/
+│   ├── main.py 
+│   ├── movieFrame.py 
+│   ├── editFrame.py
+│   └── entryFrame.py
+├── data/
+│   ├── excel/
+│   │   └──URL.xlsx
+│   ├── fieldJSON/ 
+│   │   └──(puyofu_datafiles)
+│   ├── movies/
+│   │   └──(movie_datafiels)
+│   └── images/
+│       └── (puyo_images)
+└── requirements.txt</code></pre>
+<h2 id="注意">注意</h2>
+<ul>
+<li>デバッグ作業が不十分なので作成後は必ず確認を行って下さい.
+jsonディレクトリの設定をoutputに変更することで作成後のデータを確認できます.</li>
+<li>一部エラーはerror.logに出力されるように設定しています.</li>
+</ul>
+</body>
+</html>

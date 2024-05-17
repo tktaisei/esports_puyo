@@ -1,0 +1,7 @@
+pandas
+opencv-python
+Pillow
+loggingbisect
+json
+yt_dlp
+openpyxl
